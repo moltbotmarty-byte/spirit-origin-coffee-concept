@@ -1,0 +1,50 @@
+[
+  {
+    "file": "logo.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/Spirit_Origin_Logo_MasterLogo_Invert.png?width=1000",
+    "dimensions": [
+      1000,
+      996
+    ]
+  },
+  {
+    "file": "catuai.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/SpiritsOrigin_340gPouch_Angled_87_Catuai_090925_074648e0-cedd-47a4-8213-a4cff6a4b38c.png?width=1000",
+    "dimensions": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "espresso.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/SpiritsOrigin_340gPouch_Angled_87_Espresso_090925.png?width=1000",
+    "dimensions": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "samples.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/SpiritsOrigin_Carton_Angled_MixedSample_060825.png?width=1000",
+    "dimensions": [
+      1000,
+      1000
+    ]
+  },
+  {
+    "file": "farm.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/SPIRIT-ANIMAL__Finca_Paraideli__tasa-30_1.jpg?width=1600",
+    "dimensions": [
+      1600,
+      1067
+    ]
+  },
+  {
+    "file": "origin.webp",
+    "source": "https://spiritorigincoffee.com/cdn/shop/files/DSC09544.jpg?width=1600",
+    "dimensions": [
+      1600,
+      1069
+    ]
+  }
+]

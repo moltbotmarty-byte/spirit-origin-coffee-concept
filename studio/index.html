@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Spirit Origin | Good coffee. Rooted here.</title>
+  <meta name="description" content="An independent concept for Spirit Origin. Discover Honduran specialty coffee, grown and roasted at origin.">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f2efdf">
+  <link rel="icon" href="assets/logo.webp"><link rel="preload" href="assets/BarlowCondensed-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/catuai.webp" as="image"><link rel="stylesheet" href="style.css">
+  <script defer src="assets/gsap.min.js"></script><script defer src="assets/ScrollTrigger.min.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <a class="brand" href="#" aria-label="Spirit Origin home"><img src="assets/logo.webp" width="48" height="66" alt="Spirit Origin"></a>
+  <nav aria-label="Main navigation"><a href="#coffee">The coffee</a><a href="#origin">Our origin</a><a href="#ritual">Your ritual</a></nav>
+  <button class="bag-trigger" aria-haspopup="dialog" aria-controls="bag">Demo bag <span class="bag-count">0</span></button>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title"><span>GOOD COFFEE.</span><span>ROOTED HERE.</span></h1>
+    <div class="hero-product"><img src="assets/catuai.webp" width="1000" height="1000" alt="Spirit Origin Catuai medium roast coffee, in its original blue and yellow pouch" fetchpriority="high"></div>
+    <div class="hero-offer"><p>Honduran specialty coffee.<br>Grown here. Roasted here.</p><button class="button" data-add="catuai">Add to demo bag <span class="arrow" aria-hidden="true"></span></button><a class="text-link" href="#coffee">Explore the coffee</a></div>
+    <figure class="hero-place"><img src="assets/landscape.webp" width="1400" height="788" alt="Green hills and a road through Honduras"><figcaption>A little closer to where it begins.</figcaption></figure>
+  </section>
+
+  <section id="roast" class="roast" aria-labelledby="roast-title">
+    <div class="roast-screen">
+      <img class="roast-fallback" src="assets/roast/040.webp" width="1280" height="720" alt="Real coffee beans tumbling in the Spirit Origin roaster">
+      <canvas id="roast-canvas" aria-hidden="true" width="1280" height="720"></canvas>
+      <div class="roast-shade"></div>
+      <div class="roast-heading"><h2 id="roast-title">NOT JUST<br>FROM HONDURAS.</h2><p class="roast-line">Roasted in Honduras, too.</p></div>
+      <div class="roast-bottom"><div><p class="roast-copy">The place that grows it.<br>The hands that roast it.</p><p class="film-note">Inside the Spirit Origin roastery</p></div>
+        <div class="film-controls"><button id="motion-toggle" aria-pressed="false">Pause motion</button><a href="#origin">Continue to origin <span class="arrow down" aria-hidden="true"></span></a></div>
+      </div>
+      <div class="film-progress" aria-hidden="true"><span></span></div>
+      <p class="sr-only">As you move down the page, a real photographic sequence follows the coffee through the roaster. All information remains available without animation.</p>
+    </div>
+  </section>
+
+  <section id="origin" class="origin section" aria-labelledby="origin-title">
+    <div class="origin-intro"><h2 id="origin-title">GROWN IN<br>HONDURAS.</h2><div class="origin-copy"><p>Coffee begins long before the first pour. In Honduras, it begins with the land and the people who know it.</p><p>Spirit Origin brings growing and roasting closer together, keeping the story connected to its source.</p><a class="text-link" href="https://spiritorigincoffee.com/" target="_blank" rel="noopener">Meet Spirit Origin <span class="arrow" aria-hidden="true"></span></a></div></div>
+    <div class="origin-images"><figure class="landscape"><img src="assets/farm.webp" width="1600" height="1067" loading="lazy" alt="People at Finca Paraideli in Honduras"><figcaption>People behind the coffee. Finca Paraideli, Honduras.</figcaption></figure><figure class="portrait"><img src="assets/origin.webp" width="1600" height="1069" loading="lazy" alt="A Spirit Origin roaster checking coffee during roasting"><figcaption>Roasting at the Spirit Origin roastery.</figcaption></figure></div>
+    <p class="origin-statement">FROM HONDURAS.<br><span>TO YOUR CUP.</span></p>
+  </section>
+
+  <section id="coffee" class="coffee section" aria-labelledby="coffee-title">
+    <div class="coffee-head"><h2 id="coffee-title">FIND YOUR<br>EVERYDAY EXTRAORDINARY.</h2><p>Start with a familiar ritual. Meet a different origin.</p></div>
+    <div class="filters" role="group" aria-label="Filter coffee"><button aria-pressed="true" data-filter="all">All coffee</button><button aria-pressed="false" data-filter="filter">Filter</button><button aria-pressed="false" data-filter="espresso">Espresso</button><button aria-pressed="false" data-filter="drip">On the go</button></div>
+    <p id="filter-status" class="sr-only" aria-live="polite">Showing all 3 coffees</p>
+    <div class="products">
+      <article class="product product-featured" data-category="filter"><div class="product-image"><img src="assets/catuai.webp" width="1000" height="1000" loading="lazy" alt="Catuai medium roast coffee pouch"></div><div class="product-heading"><h3>Catuai</h3><span>Medium roast</span></div><p>Citrus honey, sweet fruit &amp; floral.<br>A fresh start, every morning.</p><div class="product-actions"><button data-add="catuai" class="button">Add to demo bag <span class="arrow" aria-hidden="true"></span></button><a href="https://spiritorigincoffee.com/products/catuai-lempira-honduran-coffee" target="_blank" rel="noopener">View current price</a></div></article>
+      <article class="product" data-category="espresso"><div class="product-image"><img src="assets/espresso.webp" width="1000" height="1000" loading="lazy" alt="Spirit Origin Espresso Blend coffee pouch"></div><div class="product-heading"><h3>Espresso Blend</h3><span>Medium-dark roast</span></div><p>For the espresso ritual.<br>Make a little time for it.</p><div class="product-actions"><button data-add="espresso" class="button">Add to demo bag <span class="arrow" aria-hidden="true"></span></button><a href="https://spiritorigincoffee.com/products/espresso-blend" target="_blank" rel="noopener">View current price</a></div></article>
+      <article class="product" data-category="drip"><div class="product-image"><img src="assets/samples.webp" width="1000" height="1000" loading="lazy" alt="Spirit Origin mixed sample drip coffee set"></div><div class="product-heading"><h3>The Tasting Set</h3><span>Single-serve pour-over</span></div><p>Your coffee, wherever.<br>Just add a cup and hot water.</p><div class="product-actions"><button data-add="samples" class="button">Add to demo bag <span class="arrow" aria-hidden="true"></span></button><a href="https://spiritorigincoffee.com/products/tasting-set-single-serve-pour-over-coffee" target="_blank" rel="noopener">View current price</a></div></article>
+    </div>
+    <p class="shop-note">Explore freely. This concept bag is a demo, not a purchase. Prices and availability live on the official store.</p>
+  </section>
+
+  <section id="ritual" class="ritual section" aria-labelledby="ritual-title">
+    <div class="ritual-image"><img src="assets/brew.webp" width="1400" height="788" loading="lazy" alt="Coffee prepared and tasted in Honduras"></div>
+    <div class="ritual-content"><h2 id="ritual-title">MAKE IT<br>YOUR MOMENT.</h2><p>However you take your coffee, start with the ritual you love.</p><div class="brew-choices" role="group" aria-label="Choose your coffee ritual"><button data-brew="filter" aria-pressed="true">Slow pour</button><button data-brew="espresso" aria-pressed="false">Espresso</button><button data-brew="drip" aria-pressed="false">On the go</button></div><div id="brew-result" aria-live="polite"><h3>A little room to slow down.</h3><p>Explore Catuai for your next filter brew. Grind fresh, follow your brewer’s recipe, and make the morning yours.</p></div><button class="text-link" id="brew-shop">Explore filter coffee <span class="arrow" aria-hidden="true"></span></button></div>
+  </section>
+
+  <section class="questions section" aria-labelledby="questions-title"><h2 id="questions-title">A FEW GOOD<br>QUESTIONS.</h2><div class="answers">
+    <details><summary>Is this Spirit Animal Coffee?</summary><p>Spirit Animal is now Spirit Origin. This independent concept uses the current Spirit Origin identity and original product photography.</p></details>
+    <details><summary>Where is the coffee roasted?</summary><p>Spirit Origin roasts in Honduras, the country where its coffee is grown. The roastery sequence above uses actual brand footage.</p></details>
+    <details><summary>Can I order here?</summary><p>Not on this demo. You can explore coffee and build a local demo bag. For current prices, shipping, availability and secure checkout, visit the official Spirit Origin store.</p><a href="https://spiritorigincoffee.com/collections/all" target="_blank" rel="noopener">Visit official store</a></details>
+  </div></section>
+</main>
+<footer class="footer"><div class="footer-top"><p>Honduran roots.<br>Your daily ritual.</p><a class="button" href="https://spiritorigincoffee.com/collections/all" target="_blank" rel="noopener">Visit official store <span class="arrow" aria-hidden="true"></span></a></div><p class="footer-word" aria-hidden="true">SPIRIT ORIGIN</p><div class="footer-bottom"><p>Independent design concept. Not the official store.</p><p>Brand imagery belongs to Spirit Origin. <a href="assets/sources.json">Asset sources</a></p><a href="#">Back to top</a></div></footer>
+<dialog id="bag" aria-labelledby="bag-title"><div class="bag-header"><h2 id="bag-title">YOUR DEMO BAG</h2><button id="close-bag" aria-label="Close demo bag">Close</button></div><p class="bag-disclosure">A little preview of your next ritual.<br>No payment. No order. Nothing sent to the store.</p><div id="bag-items"></div><div class="bag-footer"><p id="bag-summary" aria-live="polite">Your bag is empty.</p><a class="button" href="https://spiritorigincoffee.com/collections/all" target="_blank" rel="noopener">Visit official store <span class="arrow" aria-hidden="true"></span></a><p>Prices, shipping and checkout are handled on the official website. This demo bag does not transfer.</p></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><style>[data-add],.bag-trigger,.filters,.brew-choices,#brew-shop,#motion-toggle{display:none}.roast{height:auto}.roast-screen{position:relative}</style><p class="noscript">This page is readable without JavaScript. Interactive coffee filters and the demo bag require JavaScript. You can still visit the official store using the links above.</p></noscript>
+</body></html>
